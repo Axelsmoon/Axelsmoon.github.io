@@ -70,7 +70,7 @@ header h1 {
 }
 
 .image-gallery img {
-    max-width: calc(25% - 20px); /* Set maximum width for each image */
+    max-width: calc(70% - 20px); /* Set maximum width for each image */
     height: auto; /* Maintain aspect ratio */
     margin: 0 10px 20px; /* Add margin between images and below the last image */
 }
