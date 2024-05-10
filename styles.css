@@ -65,13 +65,21 @@ header h1 {
 
 .image-gallery {
     display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
     justify-content: center;
 }
 
 .image-gallery img {
-    max-width: 100%; /* Ensure images don't exceed their original size */
+    max-width: calc(25% - 20px); /* Set maximum width for each image */
     height: auto; /* Maintain aspect ratio */
-    margin: 0 10px;
+    margin: 0 10px 20px; /* Add margin between images and below the last image */
 }
+
+@media screen and (max-width: 768px) {
+    .image-gallery img {
+        max-width: calc(50% - 20px); /* Set maximum width for smaller screens */
+    }
+}
+
 
 /* Add more styling as needed */
