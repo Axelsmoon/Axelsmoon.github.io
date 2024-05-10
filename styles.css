@@ -69,8 +69,8 @@ header h1 {
 }
 
 .image-gallery img {
-    width: 200px;
-    height: auto;
+    max-width: 100%; /* Ensure images don't exceed their original size */
+    height: auto; /* Maintain aspect ratio */
     margin: 0 10px;
 }
 
