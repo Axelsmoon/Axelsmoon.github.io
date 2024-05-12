@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #161616;
+    color: #fff;
+}
+
+header {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    /*text-align: center;*/
+    margin: 0;
+    font-family: 'Berkshire Swash', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36pt;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.section {
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.project {
+    margin-bottom: 40px;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next line */
+    justify-content: center;
+}
+
+.image-gallery img {
+    /*max-width: calc(70% - 20px); /* Set maximum width for each image */
+    max-width: 300px;
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px 20px; /* Add margin between images and below the last image */
+}
+
+/*@media screen and (max-width: 768px) {
+    .image-gallery img {
+        max-width: calc(50% - 20px); /* Set maximum width for smaller screens 
+    }
+}*/
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Add more styling as needed */

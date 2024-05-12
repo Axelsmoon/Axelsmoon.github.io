@@ -1,19 +1,66 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #333;
     color: #fff;
+    /*overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place the canvas behind other content */
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* Fallback background color */
 }
 
 header {
-    background-color: #222;
+    background-color: #0f0f0f;
+    color: #fff;
     padding: 20px;
+    text-align: center;
 }
 
 header h1 {
-    text-align: center;
+    /*text-align: center;*/
     margin: 0;
+    font-family: 'Berkshire Swash', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 36pt;
+}
+
+h2 {
+    font-family: 'Berkshire Swash', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28pt;
+}
+
+p {
+    line-height: 2.0; /* Adjust line height */
+    font-size: 14pt;
+}
+
+span {
+    font-family: 'Berkshire Swash', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28pt;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+
+}
+
+#projects {
+    /* Your CSS styles for the #other section */
+    margin: 50px;
+}
+
+#involve {
+    /* Your CSS styles for the #other section */
+    margin: 50px;
+}
+
+#other {
+    /* Your CSS styles for the #other section */
+    margin: 50px;
 }
 
 .navbar {
@@ -36,6 +83,12 @@ header h1 {
 .nav-links li a {
     color: #fff;
     text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-links li a:hover {
+    color: #FFD700; /* Change color on hover */
 }
 
 .hamburger {
@@ -53,6 +106,22 @@ header h1 {
 
 .section {
     padding: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FFD700;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
 }
 
 .project {
@@ -70,16 +139,121 @@ header h1 {
 }
 
 .image-gallery img {
-    max-width: calc(70% - 20px); /* Set maximum width for each image */
+    /*max-width: calc(70% - 20px); /* Set maximum width for each image */
+    max-width: 300px;
     height: auto; /* Maintain aspect ratio */
     margin: 0 10px 20px; /* Add margin between images and below the last image */
 }
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     .image-gallery img {
-        max-width: calc(50% - 20px); /* Set maximum width for smaller screens */
+        max-width: calc(50% - 20px); /* Set maximum width for smaller screens 
+    }
+}*/
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
     }
 }
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 20px;
+    /*background-color: #0a0a0a; /* Adjust as needed */
+}
+
+.hero-content {
+    max-width: 50%;
+    padding: 20px;
+    color: #fff;
+    margin-top: -310px; /* Adjust top margin */
+}
+
+.hero-image {
+    max-width: 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.section.active {
+    opacity: 1;
+}
+
+.button-container {
+    position: relative;
+    display: block;
+    height: 200px; /* Adjust button height */
+    overflow: hidden;
+    border-radius: 10px; /* Adjust button border radius */
+    text-align: center;
+    text-decoration: none; /* Remove default anchor underline */
+    color: #fff; /* Text color */
+    font-size: 20px; /* Adjust text size */
+    font-weight: bold; /* Adjust text weight */
+    line-height: 200px; /* Adjust text vertical alignment */
+}
+
+.button-container span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px; /* Adjust text padding */
+    box-sizing: border-box;
+}
+
+.button-container:hover {
+    color: #FFD700;
+}
+
+.projects {
+    background: url('20240413-_DSC0010.png') center center no-repeat;
+    background-size: cover;
+}
+
+.involve {
+    background: url('_DSC00712.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.hobbies {
+    background: url('20230422124015_IMG_3275 (1).JPG') center center no-repeat;
+    background-size: cover;
+}
+
 
 
 /* Add more styling as needed */
