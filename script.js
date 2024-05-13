@@ -8,15 +8,66 @@ hamburger.addEventListener('click', () => {
 document.addEventListener("DOMContentLoaded", function() {
     const toggleButton = document.getElementById("toggleButton");
     const imageGallery = document.querySelector(".image-gallery");
+    //const galleryPreview = document.querySelector(".gallery-preview");
+    const plusIcon = toggleButton.querySelector(".feather-plus-circle");
+    const minusIcon = toggleButton.querySelector(".feather-minus-circle");
+
+    // Hide the gallery initially
+    imageGallery.style.display = "none";
 
     toggleButton.addEventListener("click", function() {
         if (imageGallery.style.display === "none" || imageGallery.style.display === "") {
+            plusIcon.style.display = "none";
+            minusIcon.style.display = "flex";
+
             imageGallery.style.display = "block";
+            // Hide the plus circle icon
+            galleryPreview.style.display = "none";
+            
         } else {
+            plusIcon.style.display = "flex";
+            minusIcon.style.display = "none";
+
             imageGallery.style.display = "none";
+            // Show the plus circle icon
+            galleryPreview.style.display = "block";
+
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.getElementById("toggleButton2");
+    const imageGallery = document.querySelector(".image-gallery2");
+    //const galleryPreview = document.querySelector(".gallery-preview");
+    const plusIcon = toggleButton.querySelector(".feather-plus-circle");
+    const minusIcon = toggleButton.querySelector(".feather-minus-circle");
+
+    // Hide the gallery initially
+    imageGallery.style.display = "none";
+
+    toggleButton.addEventListener("click", function() {
+        if (imageGallery.style.display === "none" || imageGallery.style.display === "") {
+            plusIcon.style.display = "none";
+            minusIcon.style.display = "flex";
+
+            imageGallery.style.display = "block";
+            // Hide the plus circle icon
+            galleryPreview.style.display = "none";
+            
+        } else {
+            plusIcon.style.display = "flex";
+            minusIcon.style.display = "none";
+
+            imageGallery.style.display = "none";
+            // Show the plus circle icon
+            galleryPreview.style.display = "block";
+
+        }
+    });
+});
+
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const redirectToPageButton = document.getElementById("projectsPage");

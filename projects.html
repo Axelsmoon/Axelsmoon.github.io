@@ -12,31 +12,47 @@
 <body>
 
     <header>
-        <h1>Axel Maysonet</h1>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="index.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="involve.html">Involvements</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="index.html">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
-    </header>
+        <div class="header-content">
+            <h1>A.M.</h1>
+            <div class="vertical-line"></div> <!-- Add vertical line -->
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="involve.html">Involvements</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>    
 
     <section id="projects" class="section">
-        <h2>Projects</h2>
+        <h2></h2>
         <div class="project">
-            <h3>Centipede Robot</h3>
+            <h3>- Centipede Robot -</h3>
             <div class="image-gallery-container">
-                <button id="toggleButton">Toggle Gallery</button>
+                <div class="gallery-preview" id="toggleButton">
+                    <!-- Add a plus circle icon here -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle" style="display: flex;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    <!-- Add a minus circle icon here (hidden by default) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus-circle" style="display: none;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    <div class="toggle-text">Click to show/hide pictures</div> <!-- Text added here -->
+                    <img src="GIF_20240417_011918_483.gif" alt="Centipede Image 1" class="preview-image"> <!-- Add the GIF -->
+                </div>
                 <div class="image-gallery">
-                    <img src="GIF_20240417_011918_483.gif" alt="Centipede Image 1">
                     <img src="20240413-_DSC0010.png" alt="Centipede Image 2">
                     <img src="CentipedeAppScreenshot8.png" alt="Centipede Image 3">
                     <img src="VideoCapture_20240508-143830.jpg" alt="Centipede Image 4">
@@ -44,6 +60,7 @@
                     <!-- Add more images for the gallery -->
                 </div>
             </div>
+        </div>
             <p>Responsible for PCB design and the Mobile Application developement, 
                 this group project was able to create a protype for a modular robotic 
                 centipede platfrom. This prototype succesfully demonstrated the feasibility, 
@@ -55,14 +72,31 @@
                 is remote controlled (via Bluetooth). </p>
         </div>
         <div class="project">
-            <h3>VeggieTasks Manager App</h3>
-            <div class="image-gallery">
-                <img src="VideoCapture_20240508-150615.jpg" alt="Project 2 Image 1">
-                <img src="VideoCapture_20240508-150632.jpg" alt="Project 2 Image 2">
-                <img src="VideoCapture_20240508-150640.jpg" alt="Project 2 Image 2">
-                <img src="VideoCapture_20240508-150707.jpg" alt="Project 2 Image 2">
-                <!-- Add more images for the gallery -->
+            <h3>- VeggieTasks Manager App -</h3>
+            <div class="image-gallery-container">
+                <div class="gallery-preview" id="toggleButton2">
+                    <!-- Add a plus circle icon here -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle" style="display: flex;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    <!-- Add a minus circle icon here (hidden by default) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus-circle" style="display: none;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    <div class="toggle-text">Click to show/hide pictures</div> <!-- Text added here -->
+                    <img src="VideoCapture_20240508-150615.jpg" alt="Project 2 Image 1" class="preview-image2"> <!-- Add the GIF -->
+                </div>
+                <div class="image-gallery2">
+                    <img src="VideoCapture_20240508-150632.jpg" alt="Project 2 Image 2">
+                    <img src="VideoCapture_20240508-150640.jpg" alt="Project 2 Image 2">
+                    <img src="VideoCapture_20240508-150707.jpg" alt="Project 2 Image 2">
+                    <!-- Add more images for the gallery -->
+                </div>
             </div>
+        </div>
             <p>An Android application designed in Flutter to be a way of gamifying tasks and managing them.
                 The app uses a point system to vary levels of importance/urgency, an includes user input
                 information such at due dates and ingredients. As well as being a task manager the app also
@@ -71,7 +105,7 @@
         </div>
 
         <div class="project">
-            <h3>Document scanning software</h3>
+            <h3>- Document scanning software -</h3>
             <div class="image-gallery">
                 <img src="paperOnTable.gif" alt="scan Image 1">
                 <!-- Add more images for the gallery -->
@@ -88,7 +122,7 @@
         </div>
 
         <div class="project">
-            <h3>Salamander Robot</h3>
+            <h3>- Salamander Robot -</h3>
             <div class="image-gallery">
                 <img src="IMG_5938.jpg" alt="Project 2 Image 1">
                 <img src="DSC1269.JPG" alt="Project 2 Image 1">
@@ -101,7 +135,7 @@
         </div>
 
         <div class="project">
-            <h3>Computer Processor Cache Simulator</h3>
+            <h3>- Computer Processor Cache Simulator -</h3>
             <div class="image-gallery">
                 <!--<img src="IMG_5938.jpg" alt="Project 2 Image 1">-->
                 <!-- Add more images for the gallery -->
