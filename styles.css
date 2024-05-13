@@ -21,7 +21,7 @@ header {
     background-color: #0f0f0f;
     color: #fff;
     padding: 20px;
-    
+    text-align: center;
 }
 
 .header-content {
@@ -259,7 +259,17 @@ button:hover {
     color: #FFD700;
 }
 
+@media screen and (min-width: 1200px) {
+    /*.button-container {
+        height: 300px;  Adjust button height for wider screens
+        font-size: 24px;  Adjust text size for wider screens 
+        line-height: 300px;  Adjust text vertical alignment for wider screens 
+    }*/
 
+    .button-container span {
+        padding: 15px; /* Adjust text padding for wider screens */
+    }
+}
 
 .projects {
     background: url('20240413-_DSC0010.png') center center no-repeat;
