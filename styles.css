@@ -26,7 +26,6 @@ header {
 
 .header-content {
     display: flex;
-    align-items: center;
 }
 
 header h1 {
@@ -278,7 +277,7 @@ button:hover {
 }
 
 .involve {
-    background: url('DSC00712.jpg') center center no-repeat;
+    background: url('VideoCapture_20240508-143830.jpg') center center no-repeat;
     background-size: cover;
 }
 
