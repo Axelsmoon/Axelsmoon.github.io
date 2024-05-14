@@ -273,17 +273,17 @@ button:hover {
 }
 
 .projects {
-    background: url('20240413-_DSC0010.png') center center no-repeat;
+    background: url('assets/centipedeCircuits1.png') center center no-repeat;
     background-size: cover;
 }
 
 .involve {
-    background: url('DSC00712.jpg') center center no-repeat;
+    background: url('assets/compTable.jpg') center center no-repeat;
     background-size: cover;
 }
 
 .hobbies {
-    background: url('20230422124015_IMG_3275 (1).JPG') center center no-repeat;
+    background: url('assets/axelVolleyball.JPG') center center no-repeat;
     background-size: cover;
 }
 

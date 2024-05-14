@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
-    <link rel="stylesheet" href="stylesAlt.css">
+    <link rel="stylesheet" href="stylesAlt2.css">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
@@ -12,25 +12,28 @@
 <body>
 
     <header>
-        <h1>Axel Maysonet</h1>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="index.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="involve.html">Involvements</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="index.html">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
-        </nav>
-    </header>
+        <div class="header-content">
+            <h1>A.M.</h1>
+            <div class="vertical-line"></div> <!-- Add vertical line -->
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="involve.html">Involvements</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>    
 
     <section id="involve" class="section">
-        <h2>Involvements</h2>
+        <h2></h2>
         <div class="involve">
             <h3>UCF Stem Day Volunteer</h3>
             <div class="image-gallery">
@@ -46,7 +49,7 @@
         <div class="involve">
             <h3>Maker Day Faire Volunteer</h3>
             <div class="image-gallery">
-                <!--<img src="IMG_5938.jpg" alt="Project 2 Image 1">-->
+                <img src="assets/makerFaire2022_1.JPG" alt="maker fair Image 1">
                 <!-- Add more images for the gallery -->
             </div>
             <p>  Representative for Robotics Club of Central Florida, at Orlando maker Faire 2022.
@@ -56,7 +59,7 @@
         <div class="involve">
             <h3>Small Project Manager</h3>
             <div class="image-gallery">
-                <!--<img src="IMG_5938.jpg" alt="Project 2 Image 1">-->
+                <img src="assets/quillContacts1.png" alt="pm Image 1">
                 <!-- Add more images for the gallery -->
             </div>
             <p>   Managed a group of 6 to create a contact manager website, (September 2023)
@@ -67,7 +70,7 @@
         <div class="involve">
             <h3>IT Volunteer Assistant at FSUS</h3>
             <div class="image-gallery">
-                <!--<img src="IMG_5938.jpg" alt="Project 2 Image 1">-->
+                <img src="assets/fsusClassroom.jpg" alt="it Image 1">
                 <!-- Add more images for the gallery -->
             </div>
             <p>  Volunteered 100+ hours to set the school’s technology for use by students (2018-2019)
@@ -77,7 +80,7 @@
         <div class="involve">
             <h3> President of Engineering Society, FSUS</h3>
             <div class="image-gallery">
-                <!--<img src="IMG_5938.jpg" alt="Project 2 Image 1">-->
+                <img src="assets/presEng1.JPG" alt="Project 2 Image 1">
                 <!-- Add more images for the gallery -->
             </div>
             <p>   (August 2017 - May 2020)
@@ -103,7 +106,8 @@
         <div class="involve">
             <h3> Secretary for Robotics Club of Central Florida</h3>
             <div class="image-gallery">
-                <!--<img src="IMG_5938.jpg" alt="Project 2 Image 1">-->
+                <img src="assets/secRCCF1.JPG" alt="sec Image 1">
+                <img src="assets/secRCCF2.JPG" alt="sec Image 1">
                 <!-- Add more images for the gallery -->
             </div>
             <p>  (December 2022 - December 2023) In addition to gaining experience working on projects, I was responsible for
@@ -139,9 +143,28 @@
 
         <div class="involve">
             <h3>CAD Experience, & Adobe Photoshop/Illustrtor Experience</h3>
-            <div class="image-gallery">
-                <!--<img src="IMG_5938.jpg" alt="Project 2 Image 1">-->
-                <!-- Add more images for the gallery -->
+            <div class="image-gallery-container">
+                <div class="gallery-preview" id="toggleButton3">
+                    <!-- Add a plus circle icon here -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle" style="display: flex;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="8" x2="12" y2="16"></line>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    <!-- Add a minus circle icon here (hidden by default) -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus-circle" style="display: none;">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    <div class="toggle-text">Click to show/hide pictures</div> <!-- Text added here -->
+                    <img src="assets/Robotics 3dspace sticker.png" alt="designs Image 1" class="preview-image2"> <!-- Add the GIF -->
+                </div>
+                <div class="image-gallery3">
+                    <img src="assets/Robotics-club-v2.jpg" alt="designs Image 1">
+                    <img src="assets/linearRegress.png" alt="designs Image 1">
+                    <img src="assets/Robotics cpu v2.png" alt="designs Image 1">
+                    <!-- Add more images for the gallery -->
+                </div>
             </div>
             <p>  3-4 years of experience working in programs like Inventor, Onshape, and Solidworks. 6+ years 
                 working in Adobe Photoshop and Illustrator.
@@ -154,3 +177,5 @@
 
 </body>
 </html>
+
+
