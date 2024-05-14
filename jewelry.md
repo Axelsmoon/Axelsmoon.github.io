@@ -1,6 +1,4 @@
----
-layout: default
----
+
 
 # My Jewelry
 <link rel="stylesheet" href="stylesAlt.css">
