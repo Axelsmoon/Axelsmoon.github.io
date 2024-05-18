@@ -35,6 +35,12 @@ h3 {
     
 }
 
+.default-header {
+    font-family: 'Berkshire Swash', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28pt;
+    /*margin-bottom: 5%;*/
+}
+
 p {
     text-align: left;
     margin-left: 10%;

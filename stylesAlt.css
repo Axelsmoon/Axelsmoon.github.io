@@ -35,6 +35,18 @@ h3 {
     margin-top: 20%;
 }
 
+.default-header {
+    font-family: 'Berkshire Swash', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28pt;
+    margin-top: 20%;
+}
+
+.special-header {
+    font-family: 'Berkshire Swash', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28pt;
+    
+}
+
 p {
     text-align: left;
     margin-left: 10%;
@@ -201,6 +213,23 @@ button:hover {
     background-color: #555;
 }
 
+.pdf-container {
+    align-items: center; /* Center vertically */
+}
+
+.pdf-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pdf-container a:hover {
+    background-color: #555;
+}
 
 /*@media screen and (max-width: 768px) {
     .image-gallery img {
