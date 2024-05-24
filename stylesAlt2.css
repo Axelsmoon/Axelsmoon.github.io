@@ -13,10 +13,10 @@ header {
     z-index: 1000;
     color: #fff;
     /* padding: 20px; */
-    padding-top: 10px;
+    padding-top: 0.7%;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 1.4%;
     text-align: center;
     height: 4%;
 }
@@ -314,7 +314,7 @@ button:hover {
 
 .trace-container {
     position: absolute;
-    top: 10%; /* Adjust this value to move traces down */
+    top: 9.5%; /* Adjust this value to move traces down */
     width: 100%;
     height: 100%;
 }
