@@ -196,6 +196,52 @@ document.addEventListener("DOMContentLoaded", function() {
     update();
 });
 
+// script.js
+// script.js
+// script.js
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    const icChipBackground = document.getElementById('ic-chip-background');
+    const icChip = document.createElement('div');
+    icChip.classList.add('ic-chip');
+    icChipBackground.appendChild(icChip);
+
+    function createPin(positionClass, topOffset) {
+        const pin = document.createElement('div');
+        pin.classList.add('pin', positionClass);
+        pin.style.top = `${topOffset +10}px`;
+        return pin;
+    }
+
+    function createTrace(positionClass, topOffset) {
+        const trace = document.createElement('div');
+        trace.classList.add('trace', positionClass);
+        trace.style.top = `${topOffset + 83}px`; // Center the trace vertically to the pin
+        trace.style.width = `${(window.outerWidth/18) -14}px`; // Extend trace halfway across the screen
+        return trace;
+    }
+
+    const pinHeight = 10; // Height of each pin
+    const spacing = 15; // Space between each pin
+    const totalHeight = icChip.offsetHeight;
+    const numPins = Math.floor(totalHeight / (pinHeight + spacing));
+
+    for (let i = 0; i < numPins; i++) {
+        const topOffset = i * (pinHeight + spacing);
+        icChip.appendChild(createPin('left', topOffset));
+        icChip.appendChild(createPin('right', topOffset));
+
+        icChipBackground.appendChild(createTrace('left', topOffset));
+        icChipBackground.appendChild(createTrace('right', topOffset));
+        
+    }
+    
+});
+
+
+
+
+
 /*document.addEventListener("DOMContentLoaded", function() {
     const canvas = document.getElementById('space');
     const ctx = canvas.getContext('2d');
