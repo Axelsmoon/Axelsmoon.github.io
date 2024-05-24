@@ -206,18 +206,28 @@ document.addEventListener("DOMContentLoaded", function() {
     icChip.classList.add('ic-chip');
     icChipBackground.appendChild(icChip);
 
+    // Create a container for pins
+    const pinContainer = document.createElement('div');
+    pinContainer.classList.add('pin-container');
+    icChip.appendChild(pinContainer);
+
+    // Create a container for traces
+    const traceContainer = document.createElement('div');
+    traceContainer.classList.add('trace-container');
+    icChipBackground.appendChild(traceContainer);
+
     function createPin(positionClass, topOffset) {
         const pin = document.createElement('div');
         pin.classList.add('pin', positionClass);
-        pin.style.top = `${topOffset +10}px`;
+        pin.style.top = `${topOffset}px`;
         return pin;
     }
 
     function createTrace(positionClass, topOffset) {
         const trace = document.createElement('div');
         trace.classList.add('trace', positionClass);
-        trace.style.top = `${topOffset + 83}px`; // Center the trace vertically to the pin
-        trace.style.width = `${(window.outerWidth/18) -14}px`; // Extend trace halfway across the screen
+        trace.style.top = `${topOffset}px`; // Center the trace vertically to the pin
+        trace.style.width = `${(window.outerWidth / 18) - 14}px`; // Extend trace halfway across the screen
         return trace;
     }
 
@@ -228,15 +238,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (let i = 0; i < numPins; i++) {
         const topOffset = i * (pinHeight + spacing);
-        icChip.appendChild(createPin('left', topOffset));
-        icChip.appendChild(createPin('right', topOffset));
+        pinContainer.appendChild(createPin('left', topOffset));
+        pinContainer.appendChild(createPin('right', topOffset));
 
-        icChipBackground.appendChild(createTrace('left', topOffset));
-        icChipBackground.appendChild(createTrace('right', topOffset));
-        
+        traceContainer.appendChild(createTrace('left', topOffset));
+        traceContainer.appendChild(createTrace('right', topOffset));
     }
-    
 });
+
+
 
 
 
