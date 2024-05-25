@@ -303,7 +303,7 @@ button:hover {
     /* width: 12px; */
     background-color: rgba(211, 211, 211, 0.1);
     top: 50%; /* Vertically center the trace within the pin container */
-    transform: translateY(-190%); /* Center the trace vertically */
+    transform: translateY(-50%); /* Center the trace vertically */
 }
 
 .trace.left {
