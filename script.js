@@ -216,6 +216,14 @@ document.addEventListener("DOMContentLoaded", function() {
     traceContainer.classList.add('trace-container');
     icChipBackground.appendChild(traceContainer);
 
+    const circle = document.createElement('div');
+    circle.classList.add('circle');
+    icChip.appendChild(circle);
+
+    const circle2 = document.createElement('div');
+    circle2.classList.add('circle2');
+    icChip.appendChild(circle2);
+
     function createPin(positionClass, topOffset) {
         const pin = document.createElement('div');
         pin.classList.add('pin', positionClass);

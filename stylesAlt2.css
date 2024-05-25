@@ -105,8 +105,9 @@ p {
 }
 
 .section {
-    padding: 20px;
+    padding: 1%;
     text-align: center;
+    padding-top: 5%;
 }
 
 .nav-links li a:hover {
@@ -254,6 +255,26 @@ button:hover {
     border: 5px solid #333; /* Border to simulate the chip body */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     
+}
+
+.circle {
+    position: absolute;
+    width: 50px; /* Width of the circle */
+    height: 50px; /* Height of the circle */
+    background-color: rgb(16, 16, 16); /* Circle color */
+    border-radius: 50%; /* Make it a circle */
+    top: 10px; /* Position from top */
+    left: 10px; /* Position from left */
+}
+
+.circle2 {
+    position: absolute;
+    width: 30px; /* Width of the circle */
+    height: 30px; /* Height of the circle */
+    background-color: rgb(16, 16, 16); /* Circle color */
+    border-radius: 50%; /* Make it a circle */
+    bottom: 10px; /* Position from top */
+    right: 10px; /* Position from left */
 }
 
 .pin {
