@@ -238,11 +238,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (let i = 0; i < numPins; i++) {
         const topOffset = i * (pinHeight + spacing);
+        const traceTopOffset = topOffset + pinHeight / 2; // Adjust for trace to be centered vertically
+
+
         pinContainer.appendChild(createPin('left', topOffset));
         pinContainer.appendChild(createPin('right', topOffset));
 
-        traceContainer.appendChild(createTrace('left', topOffset));
-        traceContainer.appendChild(createTrace('right', topOffset));
+        traceContainer.appendChild(createTrace('left', traceTopOffset));
+        traceContainer.appendChild(createTrace('right', traceTopOffset));
     }
 });
 
