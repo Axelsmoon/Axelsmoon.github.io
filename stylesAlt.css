@@ -277,7 +277,7 @@ button:hover {
 
 #ic-chip-background {
     position: fixed;
-    top: 20px;
+    top: 1.4%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -290,7 +290,7 @@ button:hover {
 
 .ic-chip {
     position: relative;
-    top: 10px;
+    top: 1.8%;
     width: 88%; /* Width of the chip area */
     height: 86%; /* Height of the chip area */
     background-color: black;
@@ -344,8 +344,7 @@ button:hover {
     height: 2px;
     /* width: 12px; */
     background-color: rgba(211, 211, 211, 0.1);
-    top: 50%; /* Vertically center the trace within the pin container */
-    transform: translateY(-50%); /* Center the trace vertically */
+
 }
 
 .trace.left {
