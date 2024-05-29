@@ -35,7 +35,7 @@ header h1 {
 }
 
 h2 {
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 
 h3 {
@@ -137,7 +137,7 @@ button:hover {
 }
 
 .project {
-    margin-bottom: 40px;
+    margin-bottom: 2%;
 }
 
 .project h3 {
@@ -313,7 +313,7 @@ button:hover {
     position: absolute;
     width: 30px; /* Width of the circle */
     height: 30px; /* Height of the circle */
-    background-color: rgb(16, 16, 16); /* Circle color */
+    background-color: rgb(11, 11, 11); /* Circle color */
     border-radius: 50%; /* Make it a circle */
     bottom: 10px; /* Position from top */
     right: 10px; /* Position from left */

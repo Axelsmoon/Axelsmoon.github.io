@@ -271,7 +271,7 @@ button:hover {
     position: absolute;
     width: 30px; /* Width of the circle */
     height: 30px; /* Height of the circle */
-    background-color: rgb(16, 16, 16); /* Circle color */
+    background-color: rgb(11, 11, 11); /* Circle color */
     border-radius: 50%; /* Make it a circle */
     bottom: 10px; /* Position from top */
     right: 10px; /* Position from left */
